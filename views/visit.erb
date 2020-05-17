@@ -5,12 +5,12 @@
 
   <div class="form-group">
     <label>Ваше имя</label>
-    <input name="username" type="text" class="form-control bbb" placeholder="Введите ваше имя">
+    <input name="username" type="text" class="form-control" placeholder="Введите ваше имя">
   </div>
 
   <div class="form-group">
     <label>Ваш телефон</label>
-    <input id="aaa" name="phone" type="text" class="form-control" placeholder="Введите ваш телефон">
+    <input  name="phone" type="text" class="form-control" placeholder="Введите ваш телефон">
   </div>
 
   <div class="form-group">
@@ -30,29 +30,32 @@
       <option>Николай</option>
        <option>Сергей</option>
     </select>
-  
-  <select name="colorpicker">
-  <option value="#7bd148">Green</option>
-  <option value="#5484ed">Bold blue</option>
-  <option value="#a4bdfc">Blue</option>
+    </div>
+
+
+     <div class="form-group">
+    <label>Какая краска?</label>
+      <select id="color" name="colorpicker">
+       <option value=>Цвет краски</option>
+  <option value="#7bd148">10.11</option>
+  <option value="#5484ed">10.22</option>
+  <option value="#a4bdfc">10.12</option>
   <option value="#46d6db">Turquoise</option>
-  <option value="#7ae7bf">Light green</option>
+  <option value="#7ae7bf">10.13</option>
   <option value="#51b749">Bold green</option>
-  <option value="#fbd75b">Yellow</option>
-  <option value="#ffb878">Orange</option>
+  <option value="#fbd75b">9.3</option>
+  <option value="#ffb878">9.35</option>
   <option value="#ff887c">Red</option>
   <option value="#dc2127">Bold red</option>
   <option value="#dbadff">Purple</option>
   <option value="#e1e1e1">Gray</option>
 </select>
-
-   
+     
   <button type="submit" class="btn btn-primary">Записаться</button>
   </div>
 
 </form>
+
   <script type="text/javascript">
-  $('#aaa').css('background-color', 'yellow')
-   $('.bbb').css('background-color', 'red')
-$('#color').simplecolorpicker();
+ $('#color').simplecolorpicker();
   </script>

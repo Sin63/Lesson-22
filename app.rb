@@ -31,7 +31,8 @@ post '/visit' do
 	@phone_number=params[:phone]
 	@date_time=params[:datetime]
 	@master=params[:barber]
+	@color=params[:colorpicker]
 
 
- erb "Ok, #{@user_name}, #{@phone_number}, #{@date_time}, #{@master}"
+ erb "Ok, #{@user_name}, #{@phone_number}, #{@date_time}, #{@master}, color: #{@color}"
 end
