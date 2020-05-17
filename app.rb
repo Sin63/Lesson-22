@@ -13,3 +13,25 @@ end
 get '/visit' do
 	erb :visit
 end
+
+get '/contacts' do
+	erb :contacts
+end
+
+get '/demo' do
+	erb :demo
+end
+
+get '/masters' do
+	erb :masters
+end
+
+post '/visit' do
+	@user_name=params[:username]
+	@phone_number=params[:phone]
+	@date_time=params[:datetime]
+	@master=params[:barber]
+
+
+ erb "Ok, #{@user_name}, #{@phone_number}, #{@date_time}, #{@master}"
+end
